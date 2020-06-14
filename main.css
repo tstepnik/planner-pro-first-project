@@ -1,16 +1,286 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
-height: 100%;
+html {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
+    width: 100%;
+    height: 100%;
     font-family: sans-serif;
-    background: blue;
+    background: #00deff;
+    /*background: gray;*/
     margin: 0;
     padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.logo img {
+    width: 35%;
+    height: auto;
+}
+
+@media (min-width: 60rem) {
+    .logo {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .logo img {
+        width: 45%;
+        height: auto;
+    }
+}
+
+.log-in-and-registration__buttons {
+    display: none;
+}
+
+@media (min-width: 60rem) {
+    .log-in-and-registration__buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 27rem;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+.mobile-nav-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+
+}
+
+.mobile-nav-button img {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 70%;
+}
+
+@media (min-width: 60rem) {
+    .mobile-nav-button {
+        display: none;
+    }
+}
+
+
+.log-in-and-registration__buttons a {
+    display: none;
+}
+
+@media (min-width: 60rem) {
+    .log-in-and-registration__buttons a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+}
+
+.log-in-button,
+.sign-in-button {
+    display: none;
+}
+
+@media (min-width: 60rem) {
+    .log-in-button,
+    .sign-in-button {
+        display: flex;
+        border: 5px solid black;
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+
+    .log-in-button:hover,
+    .log-in-button:active,
+    .sign-in-button:hover,
+    .sign-in-button:active {
+        background-color: white;
+    }
+}
+
+/*HEADER AND NAV END*/
+
+
+/*             MAIN          */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 80%;
+    margin: 5rem 2rem;
+}
+
+@media (min-width: 60rem) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+}
+
+/* DESCRIPTION*/
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    margin: 2rem;
+}
+
+@media (min-width: 60rem) {
+    .description {
+
+    }
+}
+
+.description-title {
+    font-size: 4rem;
+    margin-left: 2rem;
+}
+
+@media (min-width: 60rem) {
+    .description-title {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+}
+
+.description-list {
+    list-style-type: none;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 60rem) {
+    .description-list {
+
+    }
+}
+
+
+.description-list__item {
+    margin: 0 0 2rem 0;
+}
+
+@media (min-width: 60rem) {
+    .description-list__item {
+        margin: 0 0 2rem 0;
+    }
+}
+
+/*DESCRIPTION*/
+
+/* STATISTICS*/
+
+
+.statistics {
+    width: 50%;
+    height: 100%;
+}
+
+@media (min-width: 60rem) {
+    .statistics {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.statistics-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+}
+
+@media (min-width: 60rem) {
+    .statistics-list {
+
+    }
+}
+
+
+.statistics-list__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 60rem) {
+    .statistics-list__item {
+
+    }
+}
+
+
+.statistics-list__item img {
+    width: 20%;
+    height: auto;
+}
+
+@media (min-width: 60rem) {
+    .statistics-list__item img {
+        width: 20%;
+        height: auto;
+    }
+}
+
+
+.statistics-list__item p {
+font-size: 5rem;
+
+}
+
+@media (min-width: 60rem) {
+    .statistics-list__item {
+
+    }
+}
+
+
+@media (min-width: 60rem) {
+
+}
+
+@media (min-width: 60rem) {
+
+}
+
+@media (min-width: 60rem) {
+
+}
+
+@media (min-width: 60rem) {
+
 }
