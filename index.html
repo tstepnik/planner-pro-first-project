@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Planner-first-page</title>
     <link rel="shortcut icon" href="images/shortcut-icon.png">
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+<div class="backdrop"></div>
 <header>
     <nav>
         <div class="logo">
@@ -17,46 +18,67 @@
             <a href="#" class="log-in-button">Log in</a>
             <a href="#" class="sign-in-button">Sign up</a>
         </div>
-        <div class="mobile-nav-button"><img src="images/mobile-button.png" alt="mobile button"></div>
+        <button class="toggle-button">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+        </button>
     </nav>
 </header>
+<nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li class="mobile-nav__list-item">
+            <a href="">Sign up</a>
+        </li>
+        <li class="mobile-nav__list-item">
+            <a href="">Log in</a>
+        </li>
+    </ul>
+</nav>
 
 <main>
-        <div class="description">
-            <h1 class="description-title">Finish your goals !</h1>
-            <ul class="description-list">
-                <li class="description-list__item">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born
-                </li>
-                <li class="description-list__item">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born
-                </li>
-                <li class="description-list__item">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born
-                </li>
-            </ul>
-        </div>
+    <div class="description">
+        <h1 class="description-title">Finish your goals !</h1>
+        <ul class="description-list">
+            <li class="description-list__item">But I must explain to you how all this mistaken idea of denouncing
+                pleasure and praising pain was
+                born
+            </li>
+            <li class="description-list__item">But I must explain to you how all this mistaken idea of denouncing
+                pleasure and praising pain was
+                born
+            </li>
+            <li class="description-list__item">But I must explain to you how all this mistaken idea of denouncing
+                pleasure and praising pain was
+                born
+            </li>
+        </ul>
+    </div>
 
-        <div class="statistics">
-            <ul class="statistics-list">
-                <li class="statistics-list__item"><img src="images/plan-day.png" alt="plan your day icon.">
-                    <p>Plan day schedule</p></li>
-                <li class="statistics-list__item"><img src="images/productivity.png" alt="productivity icon.">
-                    <p>Increase productivity</p>
-                </li>
-                <li class="statistics-list__item"><img src="images/achieve-goal.png" alt="achieve goals icon.">
-                    <p>Achieve your goals!</p>
-                </li>
-            </ul>
-        </div>
+    <div class="statistics">
+        <ul class="statistics-list">
+            <li class="statistics-list__item"><img src="images/plan-day.png" alt="plan your day icon.">
+                <p>Plan day schedule</p></li>
+            <li class="statistics-list__item"><img src="images/productivity.png" alt="productivity icon.">
+                <p>Increase productivity</p>
+            </li>
+            <li class="statistics-list__item"><img src="images/achieve-goal.png" alt="achieve goals icon.">
+                <p>Achieve your goals!</p>
+            </li>
+        </ul>
+    </div>
 </main>
 
 <footer>
     <div class="footer-info">
-        <a href="#"></a>
-        <a href="#"></a>
+        <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Term of Use</a></li>
+        </ul>
+
+
     </div>
 </footer>
-
+<script src="shared.js"></script>
 </body>
 </html>
